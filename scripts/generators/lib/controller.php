@@ -95,8 +95,7 @@ class Controller extends Utils
 			$content = "<?php \n";
 			$content .= "class " . $controller->name . "Controller extends AppController {\n";
 			$content .= ($controller->methods) ? $controller->methods : '';
-			$content .= "} \n";
-			$content .= "?>  \n";
+			$content .= "}";
 			fwrite($handle, $content);
 			fclose($handle);
 			return true;
