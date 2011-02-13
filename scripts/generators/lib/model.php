@@ -60,7 +60,7 @@ class Model extends Utils
 			$content .= '	public $searchableFields = array();' . "\n";
 			$content .= '	public $cantBeEqualFields = array();' . "\n";
 			$content .= " \n";
-			$content .= "	public $validates = array(\n";
+			$content .= '	public $validates = array(' . "\n";
 			$content .= "		'field' => array('rule' => 'notEmpty', 'message' => 'Campo obrigatório')\n";
 			$content .= "	);\n";
 			$content .= " \n";			
